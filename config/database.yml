@@ -35,4 +35,5 @@ test:
 production:
   <<: *default
   adapter: postgresql
-  database: demo_test_development
+  url: <%= ENV["SOME_OTHER_URL"] %>
+  pool: 15
